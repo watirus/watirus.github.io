@@ -45,9 +45,9 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li><a href="/blog">Blog</a></li>
-            <li><a href="/install">Install</a></li>
+            <li class="active"><a href="/install">Install</a></li>
             <!-- 
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
@@ -69,89 +69,21 @@
     <div class="container">
 
       <div class="blog-header">
-        <h1 class="blog-title">A WatirUs Blog</h1>
-        <p class="lead blog-description">Working examples for using Watir for Web Testing.</p>
+        <h1 class="blog-title">How to Install Watir Webdriver</h1>
+        <p class="lead blog-description">(and everything else you might need)</p>
       </div>
 
       <div class="row">
 
         <div class="col-sm-8 blog-main">
           
-<!-- BEGIN NEW BLOG BELOW HERE -->
-<!-- Draft
-          <div class="blog-post">
-            <h2 class="blog-post-title" id="august">How I validate Analytics without a Proxy</h2>
-            <p class="blog-post-meta">Aug 1, 2015 by <a href="#">Carldmitch</a></p>
-            
-            <p>
-              
-
-            </p>
-            
-            <pre><code class="language-ruby">
-require 'watir-webdriver'
-
-</code></pre>
-
- end Draft-->
-          
-<!-- First Post -->
           <div class="blog-post">
             <h2 class="blog-post-title" id="august">Single Page Link Checker</h2>
             <p class="blog-post-meta">Aug 1, 2015 by <a href="#">Carldmitch</a></p>
             
-            <p>
-                This file, when executed with a url as the only parameter will
-                grab all the links on that page and then validate the status
-                code for each one.
-            </p>
-            
-            <pre><code class="language-ruby">
-require 'watir-webdriver'
-require 'colorize'
-require 'rest-client'
-
-@browser = Watir::Browser.new :chrome
-@browser.goto "#{ARGV[0]}"
-sleep 2
-
-puts @browser.url
-fin = @browser.links.to_a.uniq
-
-href_ray = []
-fin.each do |link|
-  unless link.href.include? "javascript"
-    href_ray.push(link.href)
-  end
-end
-uniq_ray = href_ray.uniq
-uniq_ray.reject! { |u| u.empty? }
-puts "#{uniq_ray.count}".yellow + " unique links on page"
-puts "checking each one now..."
-@browser.close
-
-uniq_ray.each do |link|
-  begin
-    # if you want to exclude any links you can do that below
-    if link.include? "javascript" or 
-       link.include? ".google.com"
-    else
-      RestClient.get(link){ |response, request, result, &block|
-        case response.code
-        when 200, 301, 302
-          puts " #{response.code} at #{link}".green
-        else
-          puts " \n#{response.code} at #{link}\n".red
-        end
-        }
-    end
-  rescue
-    puts link
-    puts $!, $@
-    next
-  end
-end
-</code></pre>
+            <ul>
+              <li>Watirbook</li>
+            </ul>
 
           </div><!-- /.blog-post -->
 
