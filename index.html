@@ -107,6 +107,12 @@ require 'watir-webdriver'
             </p>
             
             <pre><code class="language-ruby">
+# example usage:
+# $ ruby link_checker.rb http://the-internet.herokuapp.com/
+# http://the-internet.herokuapp.com/
+# 34 unique links on page
+# checking each one now...
+
 require 'watir-webdriver'
 require 'colorize'
 require 'rest-client'
@@ -115,7 +121,6 @@ require 'rest-client'
 @browser.goto "#{ARGV[0]}"
 sleep 2
 
-puts @browser.url
 fin = @browser.links.to_a.uniq
 
 href_ray = []
@@ -126,7 +131,7 @@ fin.each do |link|
 end
 uniq_ray = href_ray.uniq
 uniq_ray.reject! { |u| u.empty? }
-puts "#{uniq_ray.count}".yellow + " unique links on page"
+puts "#{uniq_ray.count}".yellow + " unique links on #{@browser.url}"
 puts "checking each one now..."
 @browser.close
 
