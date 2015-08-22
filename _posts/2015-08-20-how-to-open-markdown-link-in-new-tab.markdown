@@ -2,7 +2,7 @@
 layout: post
 title:  "How to Open Markdown Link in New Tab"
 date:   2015-08-20
-categories: markdown jekyll
+categories: jekyll
 ---
 I spent quite a bit of time looking for this answer, so I decided to link it here.
 

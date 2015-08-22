@@ -2,7 +2,7 @@
 layout: post
 title:  "Duplicate Image Check"
 date:   2015-08-20
-categories: watir webdriver ruby gist
+categories: watir gist
 ---
 This [gist](https://gist.github.com/carldmitch/6488d383fd00c5c80453){:target="\_blank"},
 will collect all the images on a page and output the url of any that are duplicated on the page
