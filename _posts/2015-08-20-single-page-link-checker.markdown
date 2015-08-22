@@ -2,7 +2,7 @@
 layout: post
 title:  "Single Page Link Checker"
 date:   2015-08-20
-categories: watir gist
+categories: gist
 ---
 This [gist](https://gist.github.com/carldmitch/f6884f474c9af75e8b6a){:target="\_blank"},
 when executed with a url as the only parameter will grab all the links on that page and then validate the status code for each one. Enjoy
