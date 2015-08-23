@@ -3,29 +3,31 @@ layout: post
 title:  "Single Page Link Checker"
 date:   2015-08-20
 categories: gist
+desc: validate the status code for each link on the page
+keywords: Ruby, Watir, Webdriver, Automation, Selenium, Links, Response, Rest-Client 
 ---
-This [gist](https://gist.github.com/carldmitch/f6884f474c9af75e8b6a){:target="\_blank"},
-when executed with a url as the only parameter will grab all the links on that page and then validate the status code for each one. Enjoy
+This [gist](https://gist.github.com/watirus/615df58b30106baf5161){:target="\_blank"},
+will grab all the links on a page and then validate the status code for each one. Enjoy
 
 {% highlight ruby %}
-# example usage:
-# $ ruby link_checker.rb http://the-internet.herokuapp.com/
-# http://the-internet.herokuapp.com/
-# 34 unique links on page
-# checking each one now...
 
 require 'watir-webdriver'
 require 'colorize'
 require 'rest-client'
 
+system "clear"
+
+url = 'http://the-internet.herokuapp.com/'
+
 @browser = Watir::Browser.new :chrome
-@browser.goto "#{ARGV[0]}"
+@browser.goto url
 sleep 2
 
 fin = @browser.links.to_a.uniq
 
 href_ray = []
 fin.each do |link|
+# Ignore any links that include the word 'javascript'
   unless link.href.include? "javascript"
     href_ray.push(link.href)
   end
