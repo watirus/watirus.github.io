@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Waiting for Network Calls with Watir"
-date:   2015-08-21
+date:   2015-08-22
 categories: gist
 desc: additional waiting beyond page load before moving on to next thing
 keywords: Ruby, Watir, Webdriver, Automation, Selenium, Links, Ajax, Javascript, Performance 
