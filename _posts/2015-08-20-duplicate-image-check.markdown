@@ -1,10 +1,13 @@
 ---
-layout: post
-title:  "Duplicate Image Check"
-date:   2015-08-20
+layout:     post
+title:     "Duplicate Image Check"
+subtitle:  "subtitle"
+date:       2015-08-20
+author:     "carldmitch"
 categories: gist
 desc: check for duplicate images on a page
 keywords: Ruby, Watir, Webdriver, Automation, Selenium, Duplicate, Images, 
+header-img: "img/01.jpg"
 ---
 
 This [gist](https://gist.github.com/watirus/1f6764148184925fedbf){:target="\_blank"},
