@@ -1,10 +1,13 @@
 ---
 layout: post
 title:  "Single Page Link Checker"
+subtitle:  
 date:   2015-08-20
-categories: gist
+author:     "carldmitch"
 desc: validate the status code for each link on the page
 keywords: Ruby, Watir, Webdriver, Automation, Selenium, Links, Response, Rest-Client 
+categories: gist
+header-img: "img/03.jpg"
 ---
 This [gist](https://gist.github.com/watirus/615df58b30106baf5161){:target="\_blank"},
 will grab all the links on a page and then validate the status code for each one. Enjoy
