@@ -1,10 +1,9 @@
 ---
 layout: post
 title:  "Waiting for Network Calls with Watir"
-subtitle:  
+subtitle:  "a gist for setting an explicit wait against a network call"
 date:   2015-08-22
 author:     "carldmitch"
-desc: additional waiting beyond page load before moving on to next thing
 keywords: Ruby, Watir, Webdriver, Automation, Selenium, Links, Ajax, Javascript, Performance 
 categories: gist
 header-img: "img/04.jpg"

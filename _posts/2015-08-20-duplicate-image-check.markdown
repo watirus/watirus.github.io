@@ -1,10 +1,9 @@
 ---
 layout:     post
 title:     "Duplicate Image Check"
-subtitle:  
+subtitle:  "a ruby gist for validating duplicate images on a webpage"
 date:       2015-08-20
 author:     "carldmitch"
-desc: check for duplicate images on a page
 keywords: Ruby, Watir, Webdriver, Automation, Selenium, Duplicate, Images, 
 categories: gist
 header-img: "img/01.jpg"

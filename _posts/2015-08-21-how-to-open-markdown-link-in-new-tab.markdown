@@ -1,10 +1,9 @@
 ---
 layout: post
 title:  "How to Open Markdown Link in New Tab"
-subtitle:  
-date:   2015-08-20
+subtitle:  "example code for opening markdown links in new tabs"
+date:   2015-08-21
 author:     "carldmitch"
-desc: open links in markdown in new tab
 keywords: markdown, new tabs, jekyll, target 
 categories: jekyll
 header-img: "img/02.jpg"

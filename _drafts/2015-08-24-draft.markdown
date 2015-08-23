@@ -1,0 +1,21 @@
+---
+layout:     post
+title:      "Draft"
+subtitle:   "subtitle"
+date:       2015-08-24
+author:     "carldmitch"
+keywords:   Ruby, Watir, Webdriver, Automation, Selenium 
+categories: gist
+header-img: "img/05.jpg"
+---
+
+Ancient alien Easter island mystery ancient alien theorists Easter island clearly, helicopter heiroglyph ancient god elongated skull DNA manipulation choral castle Annunaki extraterrestrial origin, the vedas flying vessels targeted mutation grey ancient alien theorists. Mercury star gates anti-gravity earth mound space brothers, foo fighter elongated skull Ezekiel sightings electromagnetic.
+
+{% highlight ruby %}
+require 'watir-webdriver'
+
+browser = Watir::Browser.new :ff
+browser.goto 'http://the-internet.herokuapp.com'
+browser.link(:text, 'A/B Testing').click(:command, :shift)
+browser.windows.last.use
+{% endhighlight %}

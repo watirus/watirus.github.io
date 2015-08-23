@@ -1,10 +1,9 @@
 ---
 layout: post
 title:  "Single Page Link Checker"
-subtitle:  
+subtitle:  "a ruby gist to validate response codes for all the links on given webpage"
 date:   2015-08-20
 author:     "carldmitch"
-desc: validate the status code for each link on the page
 keywords: Ruby, Watir, Webdriver, Automation, Selenium, Links, Response, Rest-Client 
 categories: gist
 header-img: "img/03.jpg"
